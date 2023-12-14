@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  web:
+    image: danimanrey/mi-app-flask:latest
+    build: 
+      context: "../"
+      dockerfile: dockerfile
+    ports: "5000:5000"
+command: python app_model.py
